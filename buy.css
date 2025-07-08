@@ -275,6 +275,10 @@ section.social-media {
     display: flex;
     flex-direction: row;
   }
+  .buttons1, .buttons2, .buttons3{
+    display: flex;
+    gap: 20px;
+  }
 }
 
 /* استجابة أصغر للشاشات الصغيرة جداً */
