@@ -184,14 +184,112 @@ section.social-media {
   text-decoration: none;
 }
 .first{
-  width: 25%;
+  width: 20%;
   margin: 20px auto;
   border: 1px solid black;
 }
 .last{
-  width: 65%;
+  width: 63%;
   margin: 20px auto;
   border: 1px solid black;
 }
+/* استجابة الهاتف والأجهزة الصغيرة */
+@media (max-width: 800px) {
+  .aa {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 18px 0 0 0;
+  }
+  div {
+    width: 95vw !important;
+    min-width: 0 !important;
+    height: auto;
+    margin: 12px 0;
+    padding: 10px 2vw;
+  }
+  .card1, .card2, .card3 {
+    width: 95vw !important;
+    min-width: 0 !important;
+    max-width: 99vw !important;
+    height: auto;
+    padding: 10px 2vw;
+  }
+  nav {
+    height: auto;
+    min-height: 60px;
+    padding-bottom: 8px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    height: auto;
+  }
+  nav ul a {
+    width: 100%;
+  }
+  nav li {
+    width: 100%;
+    border-radius: 0;
+    padding: 14px 0;
+    font-size: 1em;
+    border-bottom: 1px solid #b3e5fc;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  img {
+    width: 28px;
+    height: 28px;
+    margin-left: 6px;
+  }
+  footer {
+    padding: 12px 0 8px 0;
+    font-size: 0.95em;
+  }
+  .contact, .social-media {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .first {
+  width: 225px;
+  }
+  .last{
+  width: 90vw;
+  }
+  h1 {
+    font-size: 1.3em;
+    margin-top: 12px;
+  }
+  li {
+    font-size: 1em;
+    padding: 7px;
+  }
+  button {
+    width: 90vw;
+    max-width: 200px;
+    margin-bottom: 18px;
+  }
+  .social-media{
+    display: flex;
+    flex-direction: row;
+  }
+}
 
+/* استجابة أصغر للشاشات الصغيرة جداً */
+@media (max-width: 450px) {
+  div, .card1, .card2, .card3 {
+    width: 99vw !important;
+    padding: 6px 1vw;
+  }
+  button {
+    width: 96vw;
+    max-width: 99vw;
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1.1em;
+  }
+}
 
